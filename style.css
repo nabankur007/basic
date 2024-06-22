@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+        191deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(83, 200, 130, 1) 28%,
+        rgb(224, 177, 20) 62%,
+        rgba(253, 181, 45, 1) 88%
+    );
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.todoapp {
+    border: 2px solid yellow;
+    border-radius: 5px;
+    width: 60%;
+    height: 550px;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px rgb(95, 87, 87);
+}
+
+.todoapp h1 {
+    font-size: 1.3rem;
+}
+
+.task {
+    width: inherit;
+    min-height: 400px;
+    margin: 20px;
+}
+
+.add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    /* background-color: rgb(251, 254, 225); */
+}
+
+.add-task input {
+    flex: 1;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    height: 45px;
+    padding: 10px;
+    background-color: rgb(251, 254, 225);
+    font-size: 1.2rem;
+}
+
+.input-btn {
+    border-radius: 4px;
+    outline: none;
+    width: 50px;
+    padding: 5px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(255, 170, 12, 0.945);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(234, 73, 73, 0.908);
+}
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    user-select: none;
+    padding: 5px;
+    cursor: pointer;
+}
+ul li p {
+    max-width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    flex:1;
+    min-height:auto;
+    
+}
+
+.list-btn {
+    height: 40px;
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: hsl(0, 100%, 50%);
+}
+.green {
+    background-color: hsl(120, 100%, 25%);
+}
+.red:hover {
+    background-color: hsl(0, 100%, 40%);
+}
+.green:hover {
+    background-color: hsl(120, 100%, 15%);
+}
